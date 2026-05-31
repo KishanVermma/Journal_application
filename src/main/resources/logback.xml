@@ -1,0 +1,53 @@
+<configuration>
+    <appender name="myConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{yy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%msg%n
+            </pattern>
+        </encoder>
+
+    </appender>
+<!--    <appender name="myFileAppender" class="ch.qos.logback.core.FileAppender">-->
+<!--        <file>-->
+<!--            journalApp.log-->
+<!--            //or give path to any log for linux or windows-->
+<!--        </file>-->
+<!--        <encoder>-->
+<!--            <pattern>-->
+<!--                %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%msg%n-->
+<!--            </pattern>-->
+<!--        </encoder>-->
+<!--        -->
+
+<!--    </appender>-->
+    <appender name="myFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        //or give path to any log for linux or windows
+        <file>
+            journalApp.log
+        </file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            //%i index for size based rollover when file size increase then 10mb in every minute
+            <fileNamePattern>
+                journalApp_%d{yyyy-MM-dd_HH-mm}.%i.log
+            </fileNamePattern>
+            //size roll over of 10mb file if in a min 10mb log printed then next file is created
+            <maxFileSize>10MB</maxFileSize>
+            // max 10 log files retain then delete the 1st one
+            //10 time period logs are recorder after 10 min 1 min log delete
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%msg%n
+            </pattern>
+        </encoder>
+
+
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="myConsoleAppender" />
+        <appender-ref ref="myFileAppender" />
+
+    </root>
+
+</configuration>
