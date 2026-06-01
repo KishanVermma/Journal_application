@@ -1,0 +1,10 @@
+16:27:43.248 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:27:43.266 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+16:27:43.282 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 16 ms
+16:27:43.322 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy -Securing GET /user
+16:27:43.336 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter -Set SecurityContextHolder to anonymous SecurityContext
+16:27:43.342 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint -Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+16:27:43.342 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint -No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@479253c9
+16:27:43.355 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy -Securing GET /error
+16:27:43.356 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy -Secured GET /error
+16:27:43.554 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter -Set SecurityContextHolder to anonymous SecurityContext

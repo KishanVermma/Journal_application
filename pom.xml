@@ -89,6 +89,7 @@
 			</plugin>
 
 		</plugins>
+		<finalName>docker_image</finalName>
 	</build>
 	<repositories>
 		<repository>

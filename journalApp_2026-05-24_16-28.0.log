@@ -1,0 +1,4 @@
+16:28:27.850 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy -Securing GET /user
+16:28:28.618 [http-nio-8081-exec-3] DEBUG o.s.s.a.d.DaoAuthenticationProvider -Authenticated user
+16:28:28.619 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter -Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=com.kishan.mongo.model.UserPrincipal@206bf316, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]
+16:28:28.620 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy -Secured GET /user

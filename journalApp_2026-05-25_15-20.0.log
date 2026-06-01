@@ -1,0 +1,3 @@
+15:20:59.072 [main] INFO  com.kishan.mongo.MongoApplication -Starting MongoApplication using Java 17.0.19 with PID 20456 (C:\Users\kisha\Downloads\SpringMongoIntegration\mongo\target\classes started by kisha in C:\Users\kisha\Downloads\SpringMongoIntegration\mongo)
+15:20:59.082 [main] DEBUG com.kishan.mongo.MongoApplication -Running with Spring Boot v3.3.5, Spring v6.1.14
+15:20:59.083 [main] INFO  com.kishan.mongo.MongoApplication -The following 1 profile is active: "dev"

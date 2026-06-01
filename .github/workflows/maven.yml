@@ -38,5 +38,13 @@ jobs:
       with:
         name: test-reports
         path: target/surefire-reports/
-
+    - name: Build & Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: kishanverrm1a/docker_image
+        tags: latest
+        registry: docker.io
+        dockerfile: DockerFile
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive

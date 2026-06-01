@@ -1,0 +1,7 @@
+17:39:03.165 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy -Securing POST /public/create-user
+17:39:03.560 [http-nio-8081-exec-4] DEBUG o.s.s.a.d.DaoAuthenticationProvider -Authenticated user
+17:39:03.560 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.w.BasicAuthenticationFilter -Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=com.kishan.mongo.model.UserPrincipal@2afd238e, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]
+17:39:03.561 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy -Secured POST /public/create-user
+17:39:03.565 [http-nio-8081-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver -Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.kishan.mongo.model.User com.kishan.mongo.controller.PublicController.createUser(com.kishan.mongo.model.User)]
+17:39:03.567 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy -Securing POST /error
+17:39:03.567 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy -Secured POST /error
